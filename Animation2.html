@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation 2 </title>
+
+    <style>
+        .animation1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example; /* naming it for keyframes*/
+            animation-duration: 3s; /* animation will complete within 4 seconds*/
+            animation-iteration-count: 5; /*it will run the animation at least 5 times*/
+            animation-direction: reverse; /*it will reverse the animation*/
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="animation1">CSS</div>
+    <p><b>Note : </b> Each round is completed in 3 seconds.</p> <br><br>
+    <p><b>Note : </b> After completing 5 rounds the div back to its original color.</p>
+</body>
+</html>

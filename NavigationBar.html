@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            height: 50px;
+            margin: 0px auto;
+            background: #6d3c75;
+            width: 80%;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+        }
+
+        .navbar ul li {
+            float: left;
+            width: 217px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar ul ul {
+            position: absolute;
+            background-color: #6d3c75;
+            display: none;
+        }
+
+        .navbar ul ul ul {
+            left: 100%;
+            top: 0px;
+        }
+
+        .navbar ul li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home !</a></li>
+            <li><a href="#">services</a>
+                <ul>
+                    <li><a href="">Daily Menu</a></li>
+                    <li><a href="">Event Booking</a>
+                        <ul>
+                            <li><a href="">Formal Events</a></li>
+                            <li><a href="">Informal Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="#c1">Contact us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

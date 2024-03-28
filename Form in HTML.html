@@ -1,0 +1,59 @@
+<!-- saved from url=(0051)file:///C:/Users/monuv/OneDrive/Desktop/form18.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Form in HTML</title>
+
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form onsubmit="validateForm()">
+        <fieldset>
+            <legend> User Information:</legend>
+
+            <label for="name">Enter your Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label> Contact Number:</label><br>
+            <input type="number" id="contact" name="contact"><br>
+
+            <label>Enter your Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label>Enter your Passsword:</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <label> Enter your Gender:</label><br>
+            <input type="radio" id="gender" name="gender" value="male/">Male<br>
+            <input type="radio" id="gender" name="gender" value="female/">Female<br>
+            <input type="radio" id="gender" name="gender" value="other/">other<br>
+            <br> Enter your address:<br>
+            <textarea row="2" id="textarea" cols="20"></textarea><br>
+
+            <input type="submit" value="sign-up"><br>
+        </fieldset>
+
+    </form>
+
+    <script>
+        var name = document.getElementById("name").value
+        var email = document.getElementById("email").value
+        var contact = document.getElementById("contact").value
+        var password = document.getElementById("password").value
+        var gender = document.getElementById("gender").value
+        var textarea = document.getElementById("textarea").value
+
+        function validateForm(e) {
+            // e.preventDefault();
+            if (name === '' || email === '' || contact === '' || password === '' || gender === '' || textarea === '') {
+                alert("Please fill all the input fields first")
+            } else {
+                alert("Form submitted successfully..")
+            }
+        }
+    </script>
+</body>
+
+</html>

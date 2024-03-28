@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation 1 </title>
+
+    <style>
+        .animation1 {
+            width : 30%;
+            height : 20px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+
+        @keyframes example {
+            from {background-color:red;}
+            to {background-color:yellow;}
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="animation1">Red to Yellow</div>
+    <p><b>Note : </b> After 3 seconds the color of the div back to its original color.</p>
+</body>
+</html>
